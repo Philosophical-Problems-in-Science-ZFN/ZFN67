@@ -42,7 +42,10 @@
 \renewcommand{\tabularxcolumn}[1]{m{#1}}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \newcolumntype{s}{>{\hsize=.8\hsize}X}
-%\usepackage{supertabular}
+\renewcommand\arraystretch{1.2}
+\usepackage{float}
+\usepackage{supertabular}
+
 
 \usepackage{emptypage}
 
@@ -728,15 +731,11 @@ backend=biber]{biblatex}
 \renewbibmacro*{begentry}{\midsentence}
 
 
-\addbibresource{ART_Kurkowski/Kurkowski.bib}
-%\addbibresource{ART_Sierotowicz/Sierotowicz.bib}
-%\addbibresource{ART_Liana/Liana.bib}
+%\addbibresource{ART_Kurkowski/Kurkowski.bib}
+%\addbibresource{ART_Lubinski/Lubinski.bib}
+%\addbibresource{ART_Ostapiuk/Ostapiuk.bib}
+\addbibresource{ART_Rybka/Rybka.bib}
 
-%\addbibresource{PAU_Lamza/Lamza.bib}
-
-%\addbibresource{CLA_Heller/Heller.bib}
-%\addbibresource{CLA_Polak/Polak-ext.bib}
-%\addbibresource{CLA_Trombik/Trombik.bib}
 
 
 %\addbibresource{SPE_Fredenhagen/Fredenhagen.bib}
@@ -746,11 +745,9 @@ backend=biber]{biblatex}
 %\addbibresource{SPE_Dembinski/Dembinski.bib}
 
 
-\addbibresource{REC_Gorazda/Gorazda.bib}
+%\addbibresource{REC_Gorazda/Gorazda.bib}
 %\addbibresource{REC_Polak2/Polak.bib}
-\addbibresource{REC_Cygan/Cygan.bib}
-%\addbibresource{REC_Trombik/Trombik.bib}
-%\addbibresource{REC_Slezinski/Slezinski.bib}
+%\addbibresource{REC_Cygan/Cygan.bib}
 
 
 
@@ -984,13 +981,13 @@ backend=biber]{biblatex}
 
 %\sekcja{Emergencja poziomu klasycznego w fizyce}{Emergence of the Classical}
 
-\input{ART_Kurkowski/Kurkowski.tex}
+%\input{ART_Kurkowski/Kurkowski.tex}
 
-%\input{SPE_Krol/Krol.tex}
+%\input{ART_Lubinski/Lubinski.tex}
 
-%\input{SPE_Lizzi/Lizzi.tex}
+%\input{ART_Ostapiuk/Ostapiuk.tex}
 
-%\input{SPE_Fredenhagen/Fredenhagen.tex}
+\input{ART_Rybka/Rybka.tex}
 
 %\input{SPE_Arodz/Arodz.tex}
 
@@ -1019,13 +1016,13 @@ backend=biber]{biblatex}
 
 
 
-\sekcja{Recenzje}{Book reviews}
+%\sekcja{Recenzje}{Book reviews}
 
-\input{REC_Gorazda/Gorazda.tex}
+%\input{REC_Gorazda/Gorazda.tex}
 
 %\input{REC_Polak2/Polak.tex}
 
-\input{REC_Cygan/Cygan.tex}
+%\input{REC_Cygan/Cygan.tex}
 
 
 
