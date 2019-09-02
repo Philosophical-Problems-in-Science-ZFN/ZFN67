@@ -43,8 +43,26 @@
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \newcolumntype{s}{>{\hsize=.8\hsize}X}
 \renewcommand\arraystretch{1.2}
-\usepackage{float}
-\usepackage{supertabular}
+\usepackage{float} %umożliwia hard positioning (flaga: H)
+%\usepackage{supertabular}
+
+
+%Equation z marginesami
+\usepackage{environ}
+\makeatletter
+\NewEnviron{widerequation}{%
+	\begin{equation*}
+	\sbox\z@{\let\label\@gobble$\displaystyle\BODY$}
+	\makebox[\textwidth]{%
+		\begin{minipage}{\dimexpr\wd\z@+3em}
+		\vspace{-\baselineskip}
+		\begin{equation*}
+		\BODY
+		\end{equation*}
+		\end{minipage}%
+	}
+	\end{equation*}
+}
 
 
 \usepackage{emptypage}
