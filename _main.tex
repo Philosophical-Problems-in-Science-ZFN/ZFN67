@@ -102,6 +102,7 @@
 
 
 \usepackage[greek,german,english,polish]{babel}
+\usepackage{textgreek}
 
 \usepackage{geometry}
 \geometry{verbose,paperwidth=145mm,paperheight=205mm,landscape=false,
@@ -292,8 +293,8 @@ skipabove=1em,splittopskip=0pt,splitbottomskip=0pt%
 \newcommand{\zfntitleeng}{Philosophical Problems in Science}
 %\newcommand{\rok}{2018} % lub rok
 \newcommand{\rok}{\the\year} % lub rok
-\newcommand{\numerarabski}{66}
-\newcommand{\numerrzymski}{LXVI}
+\newcommand{\numerarabski}{67}
+\newcommand{\numerrzymski}{LXVII}
 \newcommand{\infbiblio}{\zfntitle, nr \numerarabski\ (\rok), ss.~}
 \newcommand{\infbiblioeng}{\zfntitle, No \numerarabski\ (\rok), pp.~}
 
@@ -754,11 +755,12 @@ backend=biber]{biblatex}
 \addbibresource{ART_Ostapiuk/Ostapiuk.bib}
 \addbibresource{ART_Rybka/Rybka.bib}
 \addbibresource{ART_Turowski/Turowski.bib}
+\addbibresource{ART_Turek/Turek.bib}
 
 
 
 \addbibresource{REC_Gorazda/Gorazda.bib}
-%\addbibresource{REC_Dzionek/Dzionek.bib}
+\addbibresource{REC_Dzionek/Dzionek.bib}
 \addbibresource{REC_Cygan/Cygan.bib}
 
 
@@ -781,7 +783,9 @@ backend=biber]{biblatex}
 	page = {s\adddot~},%
 	pages = {ss\adddot~},%
 %	part = {część},%
-	andothers = {i~in\adddot\addcomma},%
+%	bytranslator = {Tłum.},%
+%	andothers = {i~in\adddot\addcomma},%
+	andothers = {i~in\adddot},%
 	series = {seria\addcolon\space}
 }
 
@@ -934,7 +938,7 @@ backend=biber]{biblatex}
 % Komenda pozwala zmieniać interlinię w dokumencie
 
 
-\usepackage{lipsum}
+%\usepackage{lipsum}
 
 
 
@@ -985,9 +989,9 @@ backend=biber]{biblatex}
 
 
 
-%\sekcja{Od Redakcji}{Editorial}
+\sekcja{Od Redakcji}{Editorial}
 
-%\input{EDI_Kwarcinski/Kwarcinski.tex}
+\input{EDI_Kwarcinski/Kwarcinski.tex}
 
 
 
@@ -997,7 +1001,7 @@ backend=biber]{biblatex}
 
 \input{ART_Kurkowski/Kurkowski.tex}
 
-%\input{ART_Turek/Turek.tex}
+\input{ART_Turek/Turek.tex}
 
 \input{ART_Lubinski/Lubinski.tex}
 
@@ -1028,7 +1032,7 @@ backend=biber]{biblatex}
 
 \input{REC_Gorazda/Gorazda.tex}
 
-%\input{REC_Dzionek/Dzionek.tex}
+\input{REC_Dzionek/Dzionek.tex}
 
 \input{REC_Cygan/Cygan.tex}
 
