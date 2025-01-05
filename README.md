@@ -1,7 +1,5 @@
 # Philosophical Problems in Science (ZFN), No. 67 (2019): Special issue: philosophy of economics
 
-[zfn.edu.pl/ind](https://zfn.edu.pl/index.php/zfn/issue/view/32)
-
 ![Issue Cover](https://zfn.edu.pl/public/journals/1/cover_issue_32_en_US.jpg)
 
 **Published:** 2019-11-18  
